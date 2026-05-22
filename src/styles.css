@@ -1527,3 +1527,108 @@ opacity: 0.75;
 .chat-box input {
 margin-top: 12px;
 }
+
+body {
+margin: 0;
+padding: 0;
+font-family: Inter, sans-serif;
+background: linear-gradient(135deg, #e9fff5 0%, #eef5ff 100%);
+min-height: 100vh;
+}
+
+.app-container {
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding: 24px;
+box-sizing: border-box;
+}
+
+.hero-card {
+background: white;
+border-radius: 28px;
+padding: 40px;
+box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+margin-bottom: 28px;
+text-align: center;
+}
+
+.hero-title {
+font-size: 42px;
+font-weight: 800;
+margin-bottom: 12px;
+color: #111;
+}
+
+.hero-subtitle {
+font-size: 18px;
+color: #666;
+margin-bottom: 28px;
+}
+
+.primary-btn {
+background: linear-gradient(135deg, #1E6BFF, #39D98A);
+border: none;
+color: white;
+padding: 14px 26px;
+border-radius: 999px;
+font-size: 15px;
+font-weight: 700;
+cursor: pointer;
+transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+transform: translateY(-2px);
+}
+
+.feed-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 22px;
+margin-top: 24px;
+}
+
+.feed-card {
+background: white;
+border-radius: 24px;
+padding: 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+transition: 0.2s ease;
+}
+
+.feed-card:hover {
+transform: translateY(-4px);
+}
+
+.stat-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 16px;
+margin: 24px 0;
+}
+
+.stat-card {
+background: white;
+border-radius: 18px;
+padding: 18px;
+box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 768px) {
+.app-container {
+padding: 14px;
+}
+
+.hero-card {
+padding: 24px;
+}
+
+.hero-title {
+font-size: 30px;
+}
+
+.feed-grid {
+grid-template-columns: 1fr;
+}
+}
