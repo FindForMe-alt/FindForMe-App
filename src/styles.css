@@ -258,6 +258,13 @@ overflow: hidden;
 min-height: 360px;
 display: flex;
 flex-direction: column;
+justify-content: space-between;
+cursor:pointer;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 55px rgba(0,0,0,0.12);
 }
 
 @media (max-width: 760px) {
