@@ -1629,7 +1629,7 @@ setSelectedPost,
 if (posts.length === 0) return <p>No posts yet.</p>
 
 return (
-<div className="feed">
+<div className="feed-grid">
 {posts.map(post => {
 const postBids = bids.filter(bid => bid.post_id === post.id)
 const acceptedBid = bids.find(bid => bid.id === post.accepted_bid_id)
@@ -1668,7 +1668,7 @@ className="post-card clickable"
 key={post.id}
 onClick={() => setSelectedPost(post)}
 >
-<div className="post-card-top">
+<div className="feed-card-top">
 <div className="post-header">
 <div
 className="avatar-circle clickable"
